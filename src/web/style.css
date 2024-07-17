@@ -1,0 +1,48 @@
+body {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ background-color: #EEE;
+ color: #333;
+}
+
+table {
+ width: 100%;
+ border: 1px solid #333;
+ border-radius: 10px;
+ border-spacing: 0px;
+ overflow: hidden;
+}
+
+table tr:nth-of-type(odd) {
+ background-color: #CCC;
+}
+
+table tr:nth-of-type(even) {
+ background-color: #DDD;
+}
+
+table tr:hover {
+ background-color: #AAA;
+}
+
+table tr td {
+ padding: 5px 10px;
+ vertical-align: top;
+}
+
+.bold {
+ font-weight: bold;
+}
+
+.loader {
+ margin: 0 auto;
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ background: radial-gradient(farthest-side,#000 94%,#0000) top/8px 8px no-repeat, conic-gradient(#0000 30%,#000);
+ -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+ animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+ 100%{ transform: rotate(1turn) }
+}
