@@ -5,6 +5,7 @@
 ## Table of contents
 - [**About**](#about)
 - [**Installation**](#installation)
+- [**Screenshot**](#screenshot)
 - [**License**](#license)
 - [**Contribution**](#contribution)
 - [**Donations**](#donations)
@@ -22,6 +23,11 @@ It is written in:
 ## Installation
 
 - For installation instructions follow [**this document**](./INSTALL.md).
+
+## Screenshot
+<p align="center">
+ <img src="./screenshot.webp" alt="Flower Finder" />
+</p>
 
 ## License
 
