@@ -17,7 +17,7 @@ This software is a template for creating [**Telegram Web Applications**](https:/
 
 It is written in:
 
-- **Backend**: [**Bun**](https://bun.sh)
+- **Backend**: [**Bun**](https://bun.sh/) + [**SQLite**](https://www.sqlite.org/)
 - **Frontend**: [**HTML**](https://www.w3.org/html/) + [**CSS**](https://www.w3.org/Style/CSS/) + [**JavaScript**](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
 
 ## Installation
@@ -25,8 +25,9 @@ It is written in:
 - For installation instructions follow [**this document**](./INSTALL.md).
 
 ## Screenshot
+
 <p align="center">
- <img src="./screenshot.webp" alt="Flower Finder" />
+ <img src="./screenshot.webp" alt="Telegram Web App" />
 </p>
 
 ## License

@@ -45,6 +45,7 @@ Here you need to set up:
   - **port** - your web server's network port (ignored if you're not running a standalone server)
   - **socket_path** - path to a unix socket file (ignored if you're running standalone server)
 - **other** section:
+  - **db_file** - the file name of the database for storing users and their logins
   - **bot_run** - true / false (**true** - run the bot, **false** - do not run the bot)
   - **bot_token** - your Telegram Bot token
   - **log_to_file** - if you'd like to log to console and log file (true) or to console only (false)

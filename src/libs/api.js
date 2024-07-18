@@ -1,8 +1,10 @@
 const crypto = require('crypto');
+const Data = require('./data.js');
 const Common = require('./common.js').Common;
 
 class API {
  constructor() {
+  this.data = new Data();
   this.apiMethods = {
    login: this.login
   };
@@ -16,7 +18,7 @@ class API {
   else return { error: 1, message: 'API not found' };
  }
 
- login(p = {}) {
+ async login(p = {}) {
   const parsedData = new URLSearchParams(p.data);
   const hash = parsedData.get('hash');
   parsedData.delete('hash');
@@ -29,7 +31,13 @@ class API {
   if (calculatedHash === hash) {
    let resData = Object.fromEntries(parsedData);
    resData.user = JSON.parse(resData.user);
-   return { error: 0, data: resData }
+   console.log(resData);
+   try {
+    await this.data.login(resData.user.id, resData.user.username, resData.user.first_name, resData.user.last_name, resData.user.language_code, resData.user.is_premium == true ? true : false, resData.user.allows_write_to_pm == true ? true : false, resData.query_id, resData.auth_date);
+    return { error: 0, data: resData }
+   } catch {
+    return { error: 2, data: 'Database error' }
+   }
   } else {
    return { error: 1, message: 'User verification failed' }
   }

@@ -28,6 +28,9 @@ class App {
   Common.addLog(header);
   Common.addLog(dashes);
   Common.addLog('');
+  const Data = require('./data.js');
+  const data = new Data();
+  await data.createDB();
   const WebServer = require('./webserver.js');
   const webServer = new WebServer();
   await webServer.run();
@@ -75,6 +78,7 @@ class App {
      socket_path: '/run/telegram.sock',
     },
     other: {
+     db_file: 'telegram.db',
      bot_run: true,
      bot_token: 'YOUR_BOT_TOKEN',
      log_to_file: true,

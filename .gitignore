@@ -4,5 +4,6 @@ src/package-lock.json
 src/bun.lockb
 src/settings.json
 src/bot.json
+src/*.db
 src/*.log
 .secret_git
