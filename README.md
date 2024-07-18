@@ -13,7 +13,7 @@
 
 ## About
 
-This software is a template for creating [**Telegram Web Applications**](https://core.telegram.org/bots/webapps). It sends the Telegram user's info from frontend to server's backend, it is verified and the result is sent back to frontend and shown in table.
+This software is a template for creating [**Telegram Web Applications**](https://core.telegram.org/bots/webapps). It sends the Telegram user's info from frontend to server's backend where is verified, stored in database and the result is sent back to frontend and shown in table.
 
 It is written in:
 
